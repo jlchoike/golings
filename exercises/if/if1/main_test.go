@@ -1,15 +1,17 @@
 // if1
 // Make me compile!
 
-// I AM NOT DONE
 package main_test
 
-import "testing"
+import (
+	"math"
+	"testing"
+)
 
 func bigger(a int, b int) int {
 	// Complete this function to return the bigger number
 	// Use only if statements
-	return 0
+	return int(math.Max(float64(a), float64(b)))
 }
 
 func TestTwoIsBiggerThanOne(t *testing.T) {
